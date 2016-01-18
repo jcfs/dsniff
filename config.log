@@ -1,0 +1,235 @@
+This file contains any messages produced by compilers while
+running configure, to aid debugging if configure makes a mistake.
+
+configure:547: checking for gcc
+configure:660: checking whether the C compiler (gcc  ) works
+configure:676: gcc -o conftest    conftest.c  1>&5
+configure:702: checking whether the C compiler (gcc  ) is a cross-compiler
+configure:707: checking whether we are using GNU C
+configure:716: gcc -E conftest.c
+configure:735: checking whether gcc accepts -g
+configure:797: checking for a BSD compatible install
+configure:852: checking for ranlib
+configure:881: checking how to run the C preprocessor
+configure:902: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:965: checking for X
+configure:1032: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1028:27: fatal error: X11/Intrinsic.h: No such file or directory
+ #include <$x_direct_test_include>
+                           ^
+compilation terminated.
+configure: failed program was:
+#line 1027 "configure"
+#include "confdefs.h"
+#include <X11/Intrinsic.h>
+configure:1108: gcc -o conftest -g -O2   conftest.c -lXt  1>&5
+/usr/bin/ld: cannot find -lXt
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 1101 "configure"
+#include "confdefs.h"
+
+int main() {
+XtMalloc()
+; return 0; }
+configure:1795: checking for ANSI C header files
+configure:1808: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1875: gcc -o conftest -g -O2   conftest.c  1>&5
+configure: In function 'main':
+configure:1870:67: warning: incompatible implicit declaration of built-in function 'exit'
+ if (XOR (islower (i), ISLOWER (i)) || toupper (i) != TOUPPER (i)) exit(2);
+                                                                   ^
+configure:1902: checking for err.h
+configure:1912: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1902: checking for fcntl.h
+configure:1912: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1902: checking for sys/ioctl.h
+configure:1912: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1902: checking for sys/queue.h
+configure:1912: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1902: checking for unistd.h
+configure:1912: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1902: checking for libgen.h
+configure:1912: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1902: checking for net/if_tun.h
+configure:1912: gcc -E  conftest.c >/dev/null 2>conftest.out
+configure:1908:24: fatal error: net/if_tun.h: No such file or directory
+ #include <$ac_hdr>
+                        ^
+compilation terminated.
+configure: failed program was:
+#line 1907 "configure"
+#include "confdefs.h"
+#include <net/if_tun.h>
+configure:1939: checking for MIN and MAX in sys/param.h
+configure:1966: checking for working const
+configure:2020: gcc -c -g -O2  conftest.c 1>&5
+configure:2041: checking for size_t
+configure:2074: checking whether struct tm is in sys/time.h or time.h
+configure:2087: gcc -c -g -O2  conftest.c 1>&5
+configure:2108: checking for u_int32_t
+configure:2141: checking for u_int64_t
+configure:2174: checking for in_addr_t
+configure:2210: checking whether gcc needs -traditional
+configure:2256: checking for 8-bit clean memcmp
+configure:2274: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c  1>&5
+configure: In function 'main':
+configure:2269:3: warning: incompatible implicit declaration of built-in function 'exit'
+   exit(memcmp(&c0, &c2, 1) < 0 && memcmp(&c1, &c2, 1) < 0 ? 0 : 1);
+   ^
+configure:2292: checking return type of signal handlers
+configure:2314: gcc -c -g -O2 -D_BSD_SOURCE  conftest.c 1>&5
+configure:2333: checking for strftime
+configure:2361: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c  1>&5
+configure:2345:6: warning: conflicting types for built-in function 'strftime'
+ char strftime();
+      ^
+configure:2431: checking for gethostname
+configure:2459: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c  1>&5
+configure:2431: checking for socket
+configure:2459: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c  1>&5
+configure:2431: checking for strdup
+configure:2459: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c  1>&5
+configure:2443:6: warning: conflicting types for built-in function 'strdup'
+ char $ac_func();
+      ^
+configure:2431: checking for strstr
+configure:2459: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c  1>&5
+configure:2443:6: warning: conflicting types for built-in function 'strstr'
+ char $ac_func();
+      ^
+configure:2484: checking for xdr_fhstatus in -lrpcsvc
+configure:2503: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c -lrpcsvc   1>&5
+configure:2531: checking for socket in -lsocket
+configure:2550: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c -lsocket  -lrpcsvc  1>&5
+/usr/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 2539 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char socket();
+
+int main() {
+socket()
+; return 0; }
+configure:2578: checking for gethostbyname in -lnsl
+configure:2597: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c -lnsl  -lrpcsvc  1>&5
+configure:2625: checking for dn_expand in -lresolv
+configure:2644: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c -lresolv  -lnsl -lrpcsvc  1>&5
+/tmp/ccElBJHz.o: In function `main':
+/home/gawd/fun/dsniff/dsniff-2.4/configure:2640: undefined reference to `dn_expand'
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 2633 "configure"
+#include "confdefs.h"
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char dn_expand();
+
+int main() {
+dn_expand()
+; return 0; }
+configure:2672: checking for __dn_expand in -lresolv
+configure:2691: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c -lresolv  -lnsl -lrpcsvc  1>&5
+configure:2721: checking for dirname
+configure:2749: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c -lresolv -lnsl -lrpcsvc  1>&5
+configure:2721: checking for strlcpy
+configure:2749: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c -lresolv -lnsl -lrpcsvc  1>&5
+/tmp/ccQqoPdM.o: In function `main':
+/home/gawd/fun/dsniff/dsniff-2.4/configure:2743: undefined reference to `strlcpy'
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 2726 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char strlcpy(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char strlcpy();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_strlcpy) || defined (__stub___strlcpy)
+choke me
+#else
+strlcpy();
+#endif
+
+; return 0; }
+configure:2721: checking for strlcat
+configure:2749: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c -lresolv -lnsl -lrpcsvc  1>&5
+/tmp/cci0VsgF.o: In function `main':
+/home/gawd/fun/dsniff/dsniff-2.4/configure:2743: undefined reference to `strlcat'
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 2726 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char strlcat(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char strlcat();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_strlcat) || defined (__stub___strlcat)
+choke me
+#else
+strlcat();
+#endif
+
+; return 0; }
+configure:2721: checking for strsep
+configure:2749: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c -lresolv -lnsl -lrpcsvc  1>&5
+configure:2779: checking for MD5Update
+configure:2807: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c -lresolv -lnsl -lrpcsvc  1>&5
+/tmp/ccw5Ife2.o: In function `main':
+/home/gawd/fun/dsniff/dsniff-2.4/configure:2801: undefined reference to `MD5Update'
+collect2: error: ld returned 1 exit status
+configure: failed program was:
+#line 2784 "configure"
+#include "confdefs.h"
+/* System header to define __stub macros and hopefully few prototypes,
+    which can conflict with char MD5Update(); below.  */
+#include <assert.h>
+/* Override any gcc2 internal prototype to avoid an error.  */
+/* We use char because int might match the return type of a gcc2
+    builtin and then its argument prototype would still apply.  */
+char MD5Update();
+
+int main() {
+
+/* The GNU C library defines this for functions which it implements
+    to always fail with ENOSYS.  Some functions are actually named
+    something starting with __ and the normal name is an alias.  */
+#if defined (__stub_MD5Update) || defined (__stub___MD5Update)
+choke me
+#else
+MD5Update();
+#endif
+
+; return 0; }
+configure:2839: checking for warnx
+configure:2867: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c -lresolv -lnsl -lrpcsvc  1>&5
+configure:2899: checking for ether_ntoa
+configure:2927: gcc -o conftest -g -O2 -D_BSD_SOURCE   conftest.c -lresolv -lnsl -lrpcsvc  1>&5
+configure:2963: checking for Berkeley DB with 1.85 compatibility
+configure:3066: checking for libpcap
+configure:3114: checking for libnet
+configure:3161: checking for libnids
+configure:3203: checking whether libnids version is good
+configure:3224: checking for OpenSSL
