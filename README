@@ -1,4 +1,11 @@
+This is a copy of dsniff_2.4b1+debian-22.1.debian package with 
+arpspoof -t option fixed. 
 
+The issue is described here:
+  https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=706766
+
+
+<--- Original readme --->
 dsniff-2.3
 ----------
 
