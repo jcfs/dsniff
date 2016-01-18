@@ -4,8 +4,10 @@ arpspoof -t option fixed.
 The issue is described here:
   https://bugs.debian.org/cgi-bin/bugreport.cgi?bug=706766
 
+================================================================
+ORIGINAL README
+=================================================================
 
-<--- Original readme --->
 dsniff-2.3
 ----------
 
